@@ -1,0 +1,30 @@
+{
+    "101": {
+        "name": "Aarav",
+        "age": "18",
+        "grade": "12",
+        "subs": [
+            "Math",
+            "Science",
+            "English"
+        ],
+        "attendance_percentage": 0.0
+    },
+    "102": {
+        "name": "Diya",
+        "age": "17",
+        "grade": "11",
+        "subs": [
+            "Math",
+            "Computer"
+        ],
+        "attendance_percentage": 0.0
+    },
+    "4508": {
+        "name": "Laksh",
+        "age": "18",
+        "grade": "A",
+        "subs": [],
+        "attendance_percentage": 76.0
+    }
+}
