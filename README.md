@@ -1,111 +1,84 @@
-# 🎓 Student Management System
+# Student Management & Analytics System
 
-A simple **Student Management System** developed using programming concepts to manage student records efficiently.  
-The system allows users to **add, view, search, and manage student information** in a structured way.
-
-This project was built as part of learning **Data Structures and Programming concepts** during my B.Tech CSE (AI & ML) studies.
+A comprehensive Python-based management system designed to streamline student data tracking, academic performance analysis, and attendance monitoring[cite: 2]. This project leverages Object-Oriented Programming (OOP) and data science libraries to provide actionable insights into class performance[cite: 2].
 
 ---
 
-## 📌 Features
+## 🚀 Features
 
-- ➕ Add new student records
-- 📄 Display all student details
-- 🔍 Search student by ID / name
-- ✏️ Update student information
-- ❌ Delete student records
-- 📂 Organized student data management
+*   **Student Records Management**: Full CRUD (Create, Read, Update, Delete) functionality for student profiles, including age, grade, and personal details[cite: 2, 4].
+*   **Academic Tracking**: Add and manage marks across various subjects with automated grade calculation[cite: 2, 3].
+*   **Attendance Monitoring**: Track attendance percentages with built-in eligibility warnings for students falling below the 75% threshold[cite: 2].
+*   **Advanced Analytics**:
+    *   **Class Reports**: Generates detailed DataFrames using **Pandas** to show averages and pass/fail status[cite: 2].
+    *   **Statistical Analysis**: Computes class mean, median, standard deviation, and identifies top performers using **NumPy**[cite: 2].
+*   **Data Visualization**: Generates and saves bar graphs for student performance, attendance trends, and subject-wise averages using **Matplotlib**[cite: 2].
+*   **Persistent Storage**: Automatically saves and loads data from localized JSON files (`students.json`, `marks.json`) to ensure data remains intact between sessions[cite: 1, 2, 3, 4].
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-- **Language:** C++ / Python *(update depending on your project)*
-- **Concepts Used:**
-  - Object-Oriented Programming (OOP)
-  - Data Structures
-  - File Handling / Data Storage
-  - Functions & Modular Programming
+*   **Language**: Python 3.x[cite: 2]
+*   **Libraries**:
+    *   `Pandas`: For data manipulation and tabular reports[cite: 2].
+    *   `NumPy`: For numerical computations and array-based logic[cite: 2].
+    *   `Matplotlib`: For generating performance and attendance graphs[cite: 2].
+    *   `JSON`: For lightweight data persistence[cite: 1, 2, 3, 4].
 
 ---
 
 ## 📂 Project Structure
 
+```text
+├── main.py              # Core application logic and Class definitions
+├── students.json        # Persistent storage for student profile data
+├── marks.json           # Persistent storage for academic records
+├── attendance.json      # (Optional) Record of daily attendance logs
+└── performance_graph.png # Generated visual analytics (after export)
 ```
-Student-Management-System/
-│
-├── main.cpp / main.py
-├── student.cpp
-├── student.h
-└── README.md
-```
-
-*(Update file names if different in your repo)*
 
 ---
 
-## ⚙️ How to Run the Project
+## ⚙️ Installation & Usage
 
-1. Clone the repository
-
+### Prerequisites
+Ensure you have the required libraries installed:
 ```bash
-git clone https://github.com/maanyafadia1903-dotcom/Student-Management-
+pip install numpy pandas matplotlib
 ```
 
-2. Navigate to the project folder
-
-```bash
-cd Student-Management-
-```
-
-3. Compile and run
-
-For **C++**
-
-```bash
-g++ main.cpp -o student
-./student
-```
-
-For **Python**
-
-```bash
-python main.py
-```
+### Running the System
+1. Clone the repository to your local machine.
+2. Navigate to the directory and run the main script:
+   ```bash
+   python main.py
+   ```
+3. Use the interactive menu to manage students, input marks, or view class analytics[cite: 2].
 
 ---
 
-## 💡 Learning Outcomes
+## 📊 Sample Data Format
 
-Through this project I practiced:
+The system stores data in structured JSON formats to allow for easy portability and manual review:
 
-- Implementing **data structures**
-- Writing **modular and maintainable code**
-- Applying **OOP concepts**
-- Managing program flow and user interaction
+**Student Profile Example (`students.json`)**:
+```json
+"102": {
+    "name": "Diya",
+    "age": "17",
+    "grade": "11",
+    "attendance_percentage": 0.0
+}
+```
+[cite: 4]
 
----
-
-## 🚀 Future Improvements
-
-- Add GUI interface
-- Add database integration (MySQL / SQLite)
-- Add authentication system
-- Add web-based version
-
----
-
-## 👩‍💻 Author
-
-**Maanya Fadia**  
-B.Tech CSE (AI & ML)  
-JG University
-
-GitHub:  
-https://github.com/maanyafadia1903-dotcom
-
----
-
-## ⭐ If you like this project
-
-Give the repository a **star ⭐** and feel free to contribute!
+**Marks Record Example (`marks.json`)**:
+```json
+"101": {
+    "Math": 88,
+    "Science": 92
+}
+```
+[cite: 3]
+```
