@@ -80,5 +80,3 @@ The system stores data in structured JSON formats to allow for easy portability 
     "Science": 92
 }
 ```
-[cite: 3]
-```
